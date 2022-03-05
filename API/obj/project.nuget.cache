@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "66AaDcoQXhW6Jv3bWs5CejRgGnGg+fKTQCHym0qqIaztBGveBRVpFnO8ZoKhStBW9emncTs90IZMV9OMqnyGBQ==",
+  "dgSpecHash": "IFCk2LsR9Fb3AYDNUCLf61S1hsb6ScdzvEiIPCkVq67chjA5XNMtmcxIuP20HzBVvrusg6Fj+chFDuP9wq/1qg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.0\\microsoft.entityframeworkcore.sqlite.5.0.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.0\\microsoft.entityframeworkcore.sqlite.core.5.0.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
@@ -41,7 +42,10 @@
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "C:\\Users\\Korisnik\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.4\\sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
