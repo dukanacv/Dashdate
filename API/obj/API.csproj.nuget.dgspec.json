@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +41,12 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
             },

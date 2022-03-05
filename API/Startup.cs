@@ -18,9 +18,11 @@ namespace API
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IConfiguration _config;
+        public Startup(IConfiguration config)
         {
-            Configuration = configuration;
+            _config = config;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -30,7 +32,7 @@ namespace API
         {
             services.AddDbContext<MyDbContext>(options =>
             {
-                options.UseSqlite("Connection string");
+                options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddControllers();
 
