@@ -22,12 +22,8 @@ C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Micro
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\SQLitePCLRaw.core.dll
-C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\System.Runtime.Caching.dll
@@ -49,7 +45,6 @@ C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.G
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.AssemblyInfoInputs.cache
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.AssemblyInfo.cs
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.csproj.CoreCompileInputs.cache
-C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.Manifest.cache
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\obj\Debug\net5.0\staticwebassets\API.StaticWebAssets.xml
@@ -78,3 +73,4 @@ C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\runti
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Korisnik\Desktop\MEAN stack\asp.net\Dashdate\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
