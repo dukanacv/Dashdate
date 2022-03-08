@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">Dashdate</a>
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" *ngIf="loggedIn">
             <li class="nav-item">
                 <a class="nav-link" href="#">Matches</a>
             </li>
@@ -11,10 +11,22 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Chat</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="logout()" href="#">Logout</a>
+            </li>
         </ul>
 
+        <div class="dropdown" *ngIf="loggedIn">
+            <a class="dropdown-toggle text-light">Welcome to Dashdate!</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item">Edit Profile</a>
+                <a class="dropdown-item" (click)="logout()">Logout?</a>
+            </div>
+        </div>
+
         <!--this form is now angular form using:  #loginForm="ngForm"-->
-        <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
+        <!--bcs of ngIf this form WONT EXIST UNTIL LOGIN; for hidden use [hidden]-->
+        <form *ngIf="!loggedIn" #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off">
 
             <!--2 way binding-->
             <input name="username" [(ngModel)]="model.username" class="form-control me-2" type="text"
