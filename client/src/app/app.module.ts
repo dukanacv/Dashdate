@@ -9,11 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
   declarations: [//all our components go in here
-    AppComponent, NavComponent, HomeComponent
+    AppComponent, NavComponent, HomeComponent, RegisterComponent
   ],
   imports: [//importing "foreign" components
     BrowserModule,
