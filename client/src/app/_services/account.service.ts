@@ -12,10 +12,10 @@ export class AccountService {
   private currentUserSource = new ReplaySubject<User | null>(1)//kinda like buffer object; (1) => size of buffer(user object for current user)
   currentUser$ = this.currentUserSource.asObservable()
 
-  constructor(private htpp: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   login(model: any) {
-    return this.htpp
+    return this.http
       .post<User>(this.baseUrl + "account/login", model).pipe(
         map((response: User) => {
           const user = response
@@ -34,5 +34,17 @@ export class AccountService {
   logout() {
     localStorage.removeItem("user")
     this.currentUserSource.next(null)
+  }
+
+  register(model: any) {
+    return this.http
+      .post(this.baseUrl + "account/register", model)
+      .pipe(map((user: any) => {
+        if (user) {
+          localStorage.setItem("user", JSON.stringify(user))
+          this.currentUserSource.next(user)
+        }
+      })
+      )
   }
 }
