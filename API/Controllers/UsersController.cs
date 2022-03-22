@@ -11,6 +11,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly MyDbContext _context;
@@ -27,7 +28,6 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]//api/users/2 i.e. 
-        [Authorize]
         public async Task<ActionResult<User>> GetUser(int id)
         {
             var user = await _context.Users.FindAsync(id);
