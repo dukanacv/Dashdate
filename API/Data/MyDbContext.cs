@@ -10,5 +10,7 @@ namespace API.Data
         }
 
         public DbSet<User> Users { get; set; }
+
+        //dont need photo DbSet bcs it will only add to users collection of photos
     }
 }
