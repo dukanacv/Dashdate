@@ -58,7 +58,7 @@ namespace API
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();//exception handling is always at the top of config
 
             }
 
@@ -68,7 +68,7 @@ namespace API
 
             app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));//enabling cors
 
-            app.UseAuthentication(); 
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
