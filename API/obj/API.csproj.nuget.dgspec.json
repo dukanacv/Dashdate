@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {}
+    "C:\\Users\\Korisnik\\Desktop\\Projekti\\dotnet\\Dashdate\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj": {
+    "C:\\Users\\Korisnik\\Desktop\\Projekti\\dotnet\\Dashdate\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Korisnik\\Desktop\\Projekti\\dotnet\\Dashdate\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Korisnik\\Desktop\\Projekti\\dotnet\\Dashdate\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Korisnik\\Desktop\\MEAN stack\\asp.net\\Dashdate\\API\\obj\\",
+        "outputPath": "C:\\Users\\Korisnik\\Desktop\\Projekti\\dotnet\\Dashdate\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
