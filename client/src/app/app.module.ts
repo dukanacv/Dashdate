@@ -15,11 +15,12 @@ import { MemberDetailComponent } from './members/member-detail/member-detail.com
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ToastrModule } from 'ngx-toastr';
+import { MemberCardComponent } from './members/member-card/member-card.component';
 
 
 @NgModule({
   declarations: [//all our components go in here
-    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent
+    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent, MemberCardComponent
   ],
   imports: [//importing "foreign" components
     BrowserModule,
