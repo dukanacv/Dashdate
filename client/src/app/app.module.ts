@@ -17,6 +17,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
+import { TabsModule } from "ngx-bootstrap/tabs"
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { JwtInterceptor } from './_interceptors/jwt.interceptor';
     BsDropdownModule.forRoot(),//import dropdown module from ngx bootstrap
     ToastrModule.forRoot({
       positionClass: "toast-bottom-right"//adding for appearence and toastr module
-    })
+    }),
+    TabsModule.forRoot()
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }],
   bootstrap: [AppComponent]
