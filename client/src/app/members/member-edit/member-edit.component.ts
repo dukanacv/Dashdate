@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { take } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { User } from 'src/app/_models/user';
@@ -11,6 +12,7 @@ import { MembersService } from 'src/app/_services/members.service';
   styleUrls: ['./member-edit.component.css']
 })
 export class MemberEditComponent implements OnInit {
+  @ViewChild("editForm") editForm!: NgForm//gives access to editForm inside components
   member!: Member | null
   user!: User | null
 
@@ -28,4 +30,9 @@ export class MemberEditComponent implements OnInit {
     })
   }
 
+  updateMember() {
+    console.log(this.member)
+    alert("Profile updated!")
+    this.editForm.reset(this.member)
+  }
 }
