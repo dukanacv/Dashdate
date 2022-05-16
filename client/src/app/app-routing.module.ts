@@ -7,12 +7,16 @@ import { MemberEditComponent } from './members/member-edit/member-edit.component
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { PreventUnsavedChangesGuard } from './_guards/prevent-unsaved-changes.guard';
 
 const routes: Routes = [//routes that the app has and their paths
   { path: "", component: HomeComponent },
   { path: "members", component: MemberListComponent, canActivate: [AuthGuard] },
   { path: "members/:username", component: MemberDetailComponent, canActivate: [AuthGuard] },
-  { path: "member/edit", component: MemberEditComponent, canActivate: [AuthGuard] },//if using memberS/edit => say patMatch:'full'
+  {
+    path: "member/edit", component: MemberEditComponent, canActivate: [AuthGuard], //if using memberS/edit => say patMatch:'full'
+    canDeactivate: [PreventUnsavedChangesGuard]
+  },
   { path: "lists", component: ListsComponent, canActivate: [AuthGuard] },
   { path: "messages", component: MessagesComponent, canActivate: [AuthGuard] },
   { path: "**", component: HomeComponent }//if user type smth that is not in config => "Wildcard Route"

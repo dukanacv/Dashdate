@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { take } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { User } from 'src/app/_models/user';
@@ -16,7 +17,14 @@ export class MemberEditComponent implements OnInit {
   member!: Member | null
   user!: User | null
 
-  constructor(private accountService: AccountService, private memberService: MembersService) {
+  //Added for if  click on close tab or browser, it should warn user
+  @HostListener("window:beforeunload", ['$event']) unloadNotification($event: any) {
+    if (this.editForm.dirty) {
+      $event.returnValue = true
+    }
+  }
+
+  constructor(private accountService: AccountService, private memberService: MembersService, private toastrService: ToastrService) {
     this.accountService.currentUser$.pipe(take(1)).subscribe(user => this.user = user)
   }
 
@@ -32,7 +40,7 @@ export class MemberEditComponent implements OnInit {
 
   updateMember() {
     console.log(this.member)
-    alert("Profile updated!")
+    this.toastrService.success("Changes saved!")
     this.editForm.reset(this.member)
   }
 }
