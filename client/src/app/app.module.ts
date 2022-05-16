@@ -18,12 +18,13 @@ import { MessagesComponent } from './messages/messages.component';
 import { ToastrModule } from 'ngx-toastr';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { JwtInterceptor } from './_interceptors/jwt.interceptor';
-import { TabsModule } from "ngx-bootstrap/tabs"
+import { TabsModule } from "ngx-bootstrap/tabs";
+import { MemberEditComponent } from './members/member-edit/member-edit.component'
 
 
 @NgModule({
   declarations: [//all our components go in here
-    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent, MemberCardComponent
+    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent, MemberCardComponent, MemberEditComponent
   ],
   imports: [//importing "foreign" components
     BrowserModule,
