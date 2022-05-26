@@ -62,6 +62,9 @@ namespace API
             services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);//service for automapper
+
+            services.Configure<CloudinarySettings>(_config.GetSection("CloudinarySettings"));//add Cloudinary service
+            services.AddScoped<IPhotoService, PhotoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
