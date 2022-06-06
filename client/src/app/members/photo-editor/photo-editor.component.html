@@ -4,7 +4,8 @@
         <div class>
             <button class="btn btn-sm" [disabled]="photo.isMain" (click)="setMainPhoto(photo)"> Main
             </button>
-            <button class="btn btn-sm btn-danger">Delete</button>
+            <button class="btn btn-sm btn-danger" [disabled]="photo.isMain"
+                (click)="deletePhoto(photo.id)">Delete</button>
         </div>
     </div>
 </div>
