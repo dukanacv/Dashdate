@@ -22,11 +22,13 @@ import { TabsModule } from "ngx-bootstrap/tabs";
 import { MemberEditComponent } from './members/member-edit/member-edit.component'
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './_interceptors/loading.interceptor';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+import { FileUploadModule } from 'ng2-file-upload';
 
 
 @NgModule({
   declarations: [//all our components go in here
-    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent, MemberCardComponent, MemberEditComponent
+    AppComponent, NavComponent, HomeComponent, RegisterComponent, MemberListComponent, MemberDetailComponent, ListsComponent, MessagesComponent, MemberCardComponent, MemberEditComponent, PhotoEditorComponent
   ],
   imports: [//importing "foreign" components
     BrowserModule,
@@ -40,7 +42,8 @@ import { LoadingInterceptor } from './_interceptors/loading.interceptor';
     }),
     TabsModule.forRoot(),
     NgxGalleryModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FileUploadModule
   ],
   providers:
     [
