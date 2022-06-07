@@ -23,7 +23,9 @@ namespace API.Services
         {
             var claims = new List<Claim>
             {
-                new Claim(JwtRegisteredClaimNames.NameId, user.Username)//adding claims in means of just name of token == username
+                //new Claim(JwtRegisteredClaimNames.NameId, user.Username)//adding claims in means of just name of token == username
+                new Claim(JwtRegisteredClaimNames.NameId, user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.UniqueName, user.Username)
             };
 
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);//key and algorithm to be used in jwt

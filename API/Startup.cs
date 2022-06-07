@@ -66,6 +66,8 @@ namespace API
             services.Configure<CloudinarySettings>(_config.GetSection("CloudinarySettings"));//add Cloudinary service
             services.AddScoped<IPhotoService, PhotoService>();
 
+            services.AddScoped<LogUserActivity>();
+
             services.AddScoped<ILikeRepository, LikeRepository>();
         }
 

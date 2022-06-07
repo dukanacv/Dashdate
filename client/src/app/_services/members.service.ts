@@ -31,4 +31,12 @@ export class MembersService {
   deletePhoto(photoId: number) {
     return this.http.delete(this.baseUrl + "users/delete-photo/" + photoId)
   }
+
+  addLike(username: string) {
+    return this.http.post(this.baseUrl + "likes/" + username, {})
+  }
+
+  getLikes(whatIsNeeded: string) {
+    return this.http.get<Partial<Member[]>>(this.baseUrl + "likes?whatIsNeeded=" + whatIsNeeded);
+  }
 }

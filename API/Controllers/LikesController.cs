@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using API.DTOs;
 using API.Entities;
 using API.Extensions;
+using API.Helpers;
 using API.Interfaces;
 using API.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -13,6 +14,7 @@ namespace API.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]//we need user to be logged in, in order to like smth
+    [ServiceFilter(typeof(LogUserActivity))]
     public class LikesController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
@@ -24,7 +26,7 @@ namespace API.Controllers
         }
 
         [HttpPost("{username}")]
-        public async Task<ActionResult> PostLike(string username)
+        public async Task<ActionResult> AddLike(string username)
         {
             var likingUserId = User.GetUserId();
 

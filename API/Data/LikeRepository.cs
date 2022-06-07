@@ -18,7 +18,7 @@ namespace API.Data
 
         public async Task<Like> GetUserLike(int likingUserId, int likedUserId)
         {
-            return await _context.Likes.FindAsync(likedUserId, likedUserId);//these 2 params are PK in Likes table
+            return await _context.Likes.FindAsync(likingUserId, likedUserId);//these 2 params are PK in Likes table
         }
 
         public async Task<IEnumerable<LikeDTO>> GetUserLikes(string whatIsNeeded, int userId)
@@ -28,13 +28,13 @@ namespace API.Data
 
             if (whatIsNeeded == "liked")
             {
-                likes = likes.Where(like => like.LikedUserId == userId);
+                likes = likes.Where(like => like.LikingUserId == userId);
                 users = likes.Select(like => like.LikedUser);//get users from likes table
             }
 
             if (whatIsNeeded == "likedBy")
             {
-                likes = likes.Where(like => like.LikingUserId == userId);
+                likes = likes.Where(like => like.LikedUserId == userId);
                 users = likes.Select(like => like.LikingUser);//users that liked currently logged in user
             }
 
