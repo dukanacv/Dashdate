@@ -4,6 +4,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
+/*
+
+
+NEVER USED BUT CAN BE USED IF NEEDED
+
+
+
+*/
+
 {
     [ApiController]
     [Route("api/[controller]")]
