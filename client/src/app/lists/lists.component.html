@@ -1,5 +1,5 @@
 <div class="text-center mt-3">
-    <h2>{{whatIsNeeded === 'liked' ? 'Members who like me' : 'Members I like'}}</h2>
+    <h2>{{whatIsNeeded === 'liked' ? 'Ko je lajkovao moj profil' : 'Moja lajkovanja'}}</h2>
 </div>
 
 <div class="container mt-3">
@@ -9,12 +9,11 @@
             <div class="btn-group">
                 <label class="btn btn-outline-primary">
                     <input type="radio" class="btn-check" name="whatIsNeeded" value="liked" [(ngModel)]="whatIsNeeded"
-                        (click)="loadLikes()">Members who like me
+                        (click)="loadLikes()">Ko je lajkovao moj profil
                 </label>
 
                 <label class="btn btn-outline-primary">
-                    Members I
-                    like<input type="radio" class="btn-check" name="whatIsNeeded" value="likedBy"
+                    Moja lajkovanja<input type="radio" class="btn-check" name="whatIsNeeded" value="likedBy"
                         [(ngModel)]="whatIsNeeded" (click)="loadLikes()">
                 </label>
             </div>

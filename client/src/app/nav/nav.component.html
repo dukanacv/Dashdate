@@ -1,25 +1,25 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
-        <a class="navbar-brand" routerLink="/" href="#">Dashdate</a>
+        <a class="navbar-brand" routerLink="/" href="#">FACEBOOK CLONE</a>
 
         <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
             <li class="nav-item">
-                <a class="nav-link" routerLink="/members" routerLinkActive="active">Matches</a>
+                <a class="nav-link" routerLink="/members" routerLinkActive="active">PRONADJI LJUDE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/lists" routerLinkActive="active">People</a>
+                <a class="nav-link" routerLink="/lists" routerLinkActive="active">OMILJENI</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/messages" routerLinkActive="active">Chats</a>
+                <a class="nav-link" routerLink="/messages" routerLinkActive="active">PORUKE</a>
             </li>
         </ul>
 
         <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
             <a class="dropdown-toggle text-light" dropdownToggle>{{user.username}}</a>
             <div class="dropdown-menu " *dropdownMenu>
-                <a class="dropdown-item" href="member/edit">Edit Profile</a>
+                <a class="dropdown-item" href="member/edit">Izmeni profil</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" (click)="logout()">Logout?</a>
+                <a class="dropdown-item" (click)="logout()">Izloguj se?</a>
             </div>
         </div>
 

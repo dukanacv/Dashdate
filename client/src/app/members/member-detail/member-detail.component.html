@@ -5,22 +5,18 @@
                 class="card-img-top img-thumbnail">
             <div class="card-body">
                 <div>
-                    <strong>Location:</strong>
+                    <strong>Lokacija:</strong>
                     <p>{{member.city}}, {{member.country}}</p>
                 </div>
                 <div>
-                    <strong>Age:</strong>
-                    <p>{{member.age}}</p>
-                </div>
-                <div>
-                    <strong>Member since:</strong>
+                    <strong>Clan od:</strong>
                     <p>{{member.created | date: "mediumDate"}}</p>
                 </div>
             </div>
             <div class="card-footer">
                 <div class="btn-group d-flex">
-                    <button class="btn btn-primary">Like</button>
-                    <button class="btn btn-success">Message</button>
+                    <button class="btn btn-primary">Lajkuj</button>
+                    <button class="btn btn-success">Poruka</button>
                 </div>
             </div>
         </div>
@@ -29,13 +25,11 @@
     <div class="col-8">
         <tabset class="member-tabset">
             <tab heading='About {{member.username}}'>
-                <h4>Description</h4>
+                <h4>opis</h4>
                 <p>{{member.description}}</p>
-                <h4>Looking for</h4>
-                <p>{{member.interests}}</p>
             </tab>
             <tab heading='Interests'>
-                <h4>Interests</h4>
+                <h4>Interesovanja</h4>
                 <p>{{member.interests}}</p>
             </tab>
             <tab heading='Photos'>
@@ -44,7 +38,7 @@
                 </ngx-gallery>
             </tab>
             <tab heading='Messages'>
-                <p>Messages will go here</p>
+                <p>PORUKE IDU OVDE</p>
             </tab>
         </tabset>
     </div>

@@ -1,11 +1,11 @@
 <div class="row" *ngIf="member">
     <div class="col-4">
-        <h1>Your profile</h1>
+        <h1>Vas profil</h1>
     </div>
     <div class="col-8">
         <div class="alert alert-info" *ngIf="editForm.dirty">
             <!--check if form is "dirty"(changed)-->
-            <strong>Information: </strong>You have made changes. Unsaved changes will be lost.
+            <strong>ALERT: </strong>Napravili ste izmene. Sacuvaj ih ili ce biti izbrisane.
         </div>
     </div>
     <div class="col-4">
@@ -14,21 +14,21 @@
                 class="card-img-top img-thumbnail">
             <div class="card-body">
                 <div>
-                    <strong>Location:</strong>
+                    <strong>Lokacija:</strong>
                     <p>{{member.city}}, {{member.country}}</p>
                 </div>
                 <div>
-                    <strong>Age:</strong>
+                    <strong>Godiste:</strong>
                     <p>{{member.age}}</p>
                 </div>
                 <div>
-                    <strong>Member since:</strong>
+                    <strong>Clan od:</strong>
                     <p>{{member.created | date:"mediumDate"}}</p>
                 </div>
             </div>
             <div class="card-footer">
-                <button [disabled]="!editForm.dirty" class="btn btn-success btn-block" form="editForm">Save
-                    Changes</button>
+                <button [disabled]="!editForm.dirty" class="btn btn-success btn-block" form="editForm">Sacuvaj
+                    Izmene</button>
             </div>
         </div>
 
