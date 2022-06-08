@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-body">
+        <div *ngIf="messages!.length === 0">
+            Nemate zajednickih poruka... Posaji poruku ispod!
+        </div>
+
+        <ul *ngIf="messages!.length > 0" class="chat">
+            <li *ngFor="let message of messages" class="mb-4">
+                <div>
+                    <span class="chat-image float-right mr-3">
+                        <img class="rounded-circle" src="{{message.senderPhotoUrl}}" alt="{{message.senderUsername}}">
+                    </span>
+                    <small class="text-muted">
+                        <span class="fa fa-clock-0">{{message.dateSent | timeago}}</span>
+
+                        <span style="color:rgb(146, 146, 146)" *ngIf="!message.dateSent 
+                                && message.senderUsername !== username">(neprocitana)</span>
+                        <h5 class="mt-2">{{message.content}}</h5>
+                        <strong style="color:rgb(0, 166, 255)" *ngIf="message.dateSent 
+                                && message.senderUsername !== username">(seen {{message.dateRead | timeago}})</strong>
+                    </small>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card-footer">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control input-sm" placeholder="Posalji poruku...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Posalji</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -23,22 +23,22 @@
 
     </div>
     <div class="col-8">
-        <tabset class="member-tabset">
-            <tab heading='About {{member.username}}'>
+        <tabset class="member-tabset" #memberTabs>
+            <tab heading='O {{member.username}}'>
                 <h4>opis</h4>
                 <p>{{member.description}}</p>
             </tab>
-            <tab heading='Interests'>
+            <tab heading='Interesovanja'>
                 <h4>Interesovanja</h4>
                 <p>{{member.interests}}</p>
             </tab>
-            <tab heading='Photos'>
+            <tab heading='Fotografije'>
                 <ngx-gallery [options]="galleryOptions" [images]="galleryImages"
                     style="display: inline-block; margin-bottom: 20px;">
                 </ngx-gallery>
             </tab>
-            <tab heading='Messages'>
-                <p>PORUKE IDU OVDE</p>
+            <tab heading='Poruke'>
+                <app-member-messages [username]="member.username"></app-member-messages>
             </tab>
         </tabset>
     </div>
