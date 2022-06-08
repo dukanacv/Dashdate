@@ -1,1 +1,62 @@
-<p>poruke</p>
+<div class="row mb-4">
+    <div class="btn-group">
+        <label class="btn btn-outline-primary">
+            <input type="radio" class="btn-check" name="container" value="Unread" [(ngModel)]="container"
+                (click)="loadMessages()">
+            <i class="fa fa-envelope"></i>Neprocitane
+        </label>
+
+        <label class="btn btn-outline-primary">
+            <input type="radio" class="btn-check" name="container" value="Inbox" [(ngModel)]="container"
+                (click)="loadMessages()">
+            <i class="fa fa-envelope-open"></i>Inbox
+        </label>
+
+        <label class="btn btn-outline-primary">
+            <input type="radio" class="btn-check" name="container" value="Outbox" [(ngModel)]="container"
+                (click)="loadMessages()">
+            <i class="fa fa-paper-plane"></i>Poslate
+        </label>
+    </div>
+</div>
+
+<div class="row" *ngIf="messages!.length === 0">
+    <h4>Nema novih poruka</h4>
+</div>
+
+<div class="row" *ngIf="messages!.length > 0">
+    <table border="3" class="table table-hover" style="cursor: pointer">
+        <tr>
+            <th style="width: 40%;">Poruke</th>
+            <th style="width: 20%;">Od / Za</th>
+            <th style="width: 20%">Vreme</th>
+            <th style="width: 20%"></th>
+        </tr>
+        <tr *ngFor="let message of messages" routerLink='{{container === "Outbox" 
+            ? "/members/" + message.receiverUsername 
+            : "/members/" + message.senderUsername }}'>
+
+            <td>{{message.content}}</td>
+
+            <td *ngIf="container ===  'Outbox'">
+                <div>
+                    <img class="img-circle rounder-circle mr-2" src="{{message.receiverPhotoUrl}}"
+                        alt="{{message.receiverUsername}}">
+                    <strong>{{message.receiverUsername | titlecase}}</strong>
+                </div>
+            </td>
+
+            <td *ngIf="container !==  'Outbox'">
+                <div>
+                    <img class="img-circle rounded-circle mr-2" src="{{message.senderPhotoUrl}}"
+                        alt="{{message.senderUsername}}">
+                    <strong>{{message.senderUsername | titlecase}}</strong>
+                </div>
+            </td>
+
+            <td>{{message.dateSent | timeago}}</td>
+            <td><button>Izbrisi</button></td>
+
+        </tr>
+    </table>
+</div>
